@@ -1,0 +1,112 @@
+**Notes**
+
+Find positive
+- 1. find intersect of two gaussians
+- 2. false discovery rate
+
+Find cells that are interesting (Paper) - > Confirm which are actualy those type (Histogram)
+- Paper bar plot
+- Paper attachment - cell types
+
+
+  ![image.png](attachment:f43f6ee6-8297-4aa3-a131-a04fa51a5c4b.png)
+
+T lymphocyte
+  - CD4 -
+  - CD8 +
+  - CD4 - <-> CD8 +
+
+T effector
+  - CD45RA +
+  - CCR7 -
+
+T effector memory
+  - CD45RA -
+  - CCR7 -
+
+Treg cells
+  - CD3, CD4, CD25 +
+  - CD127 -
+
+Monocytes
+  - CD14 +
+  - CD33 +
+
+NK
+  - CD3 -
+  - CD16 +
+
+Th2 non-TFH
+  - ???
+
+Central memory
+  - look at graphs in attachment
+
+Lymphocytes
+  - CD14 -  | -- Conditions FOR ALL lymphocytes
+  - CD33 -  |
+
+Plasmablasts
+  - CD3 -
+  - CD20 -
+  - C27 +
+  - CD38 +
+
+T naive cells
+  - look at graphs in attachment
+
+
+
+
+  CD8+ T
+CXCR5+
+CD4+ T
+CD161–
+CD45RA+
+Treg cells
+Th17 CXCR5–
+CD4+ T
+CD27+
+CD8+ T
+CXCR5+
+CD8+ T
+Naive CD4+ T
+Th1 TFH CD4+ T
+B
+
+CXCR3–
+CCR6+
+CXCR5+
+CD8+ T
+Th1 non-TFH CD4+ T
+Plasmablasts
+CD161+
+NK
+Lymphocytes
+T
+HLADR–
+CD38+
+CD4+ T
+Th2 TFH CD4+ T
+Central memory CD4+ T
+NK
+Monocytes
+PD1+
+CD8+ T
+Effector memory CD4+ T
+a
+
+b c
+
+Treg cells
+CXCR3–
+CCR6–
+CXCR5+
+CD8+ T
+CD28–
+CD8+ T
+Effector memory CD8+ T
+Effector CD8+ T
+CD85j+
+CD8+ T
+CD57+

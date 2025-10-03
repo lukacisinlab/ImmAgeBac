@@ -1,0 +1,108 @@
+Success at cell type: CD57 + CD8 + T
+With markers: CD57 + CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 224
+
+
+Success at cell type: Effector CD8 + T
+With markers: CD45RA + CCR7 - CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 916
+
+
+Success at cell type: CD28 - CD8 + T
+With markers: CD28 - CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 1345
+
+
+Success at cell type: Effector_memory CD8 + T
+With markers: CD45RA - CCR7 - CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 349
+
+
+Success at cell type: Treg_cells
+With markers: CD3-1 + CD3-2 + CD4-1 + CD4-2 + CD25 + CD127 +
+Count: 1455
+
+
+Success at cell type: Effector_memory CD4-1 + CD4-2 + T
+With markers: CD45RA - CCR7 - CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD14 -
+Count: 572
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes
+With markers: CD14 + CD33 +
+
+
+Success at cell type: NK
+With markers: CD3-1 - CD3-2 - CD16 +
+Count: 2314
+
+
+Success at cell type: CD57 + NK
+With markers: CD57 + CD3-1 - CD3-2 - CD16 +
+Count: 124
+
+
+Success at cell type: Central_memory CD4-1 + CD4-2 + T
+With markers: CD45RA - CCR7 + CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD14 -
+Count: 2798
+
+
+Success at cell type: HLA-DR - CD38-1 + CD38-2 + CD4-1 + CD4-2 + T
+With markers: HLA-DR - CD38-1 + CD38-2 + CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD14 -
+Count: 27
+
+
+Success at cell type: T
+With markers: CD3-1 + CD3-2 + CD14 -
+Count: 9928
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes
+With markers: CD14 - CD33 -
+
+
+Success at cell type: CD161 + NK
+With markers: CD161 + CD3-1 - CD3-2 - CD16 +
+Count: 383
+
+
+Success at cell type: CD8 + T
+With markers: CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 3299
+
+
+Success at cell type: Plasmablast
+With markers: CD3-1 - CD3-2 - CD20 - CD27 + CD38-1 + CD38-2 -
+Count: 2
+
+
+Success at cell type: Naive CD4-1 + CD4-2 + T
+With markers: CD45RA + CCR7 + CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD14 -
+Count: 2304
+
+
+Success at cell type: B
+With markers: CD20 + CD19 +
+Count: 619
+
+
+Success at cell type: CD27 + CD8 + T
+With markers: CD27 + CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 2034
+
+
+Success at cell type: CD161 - CD45RA + CD4-1 + CD4-2 + Treg_cells
+With markers: CD161 - CD45RA + CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD4-1 + CD4-2 + CD25 + CD127 +
+Count: 325
+
+
+Success at cell type: CD185 + CD4-1 + CD4-2 + T
+With markers: CD185 + CD4-1 + CD4-2 + CD3-1 + CD3-2 + CD14 -
+Count: 1110
+
+
+Success at cell type: Naive CD8 + T
+With markers: CD45RA + CCR7 + CD8 + CD3-1 + CD3-2 + CD14 -
+Count: 1426

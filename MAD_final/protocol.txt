@@ -1,0 +1,130 @@
+AUTHOR
+-------
+hruzik2
+
+
+SUBMITTED FILES
+---------------
+constantsForData.py
+    Script with a class that holds constants such as dictionaries and lists. Sample usage is provided in comments.
+
+anova.py
+    Script with a class for performing ANOVA. Sample usage is provided in comments.
+
+cellVisualizations.py
+    Script with a class for visualizing cell statistics using histograms and swarm plots. Sample usage is provided in comments.
+
+cellCounts.py
+    Script with a class that determines the type of each cell in the dataset and performs simple cell statistics. Mainly used as a helper for cellVisualizations.py.
+
+histograms.py
+    Script with a class that automates the definition of the positivity threshold for each cell type. Visualization of the threshold is included in the class. Usage is provided in comments.
+
+MAD_notebook.ipynb
+    Jupyter notebook containing all the classes above. I highly suggest running this notebook to observe the functionality. The scripts achieve the same results but load the data separately, which takes a lot of time.
+
+
+(output files)
+------------
+cell_bar_plots.png
+    Output of the method plot_donor_cells_histogram() in the class CellVisualizations. It represents all the studied cell types for each donor.
+
+positivityThreshold.png
+    Output of the method draw_histograms() in the class Histograms. It visually represents the process used to determine the thresholds.
+
+swarm_plot.png
+    Output of the method swarm_plot() in the class CellVisualizations. This swarm plot represents the same data as plot_donor_cells_histogram() but in a more compact format, making it easier to compare frequencies.
+
+markers.txt
+    Output of the method cell_into_markers() in the class CellCounts. It maps the studied cells into markers that we can later use as defining factors for cell type.
+
+anova_res.txt
+    Output of the method anova_get_p_value() saved with save_anova_res() in the class ANOVA. Analysis of variance for the metadata columns from table mmc3.xlsx.
+
+cell_counts_p1.txt
+    Output of the method print_counts() for donor "P1". This method uses count_rows_with_multiple_conditions(), and both of them are in the CellCounts class.
+
+
+(installation files)
+------------------
+install_libraries.sh
+    Necessary libraries needed for smooth running (I suppose you have matplotlib and other basic libraries installed).
+
+mmc3.xlsx
+    Metadata table.
+
+
+DATASET FILES
+-------------
+Satija.h5mu
+    Dataset I used. Too big to include. Has single cell data in h5mu format (2.2 GB).
+
+gatingStrategyAyelet.pdf - sources
+ImmAgePaper.pdf - sources
+
+
+STEPS USED
+----------
+
+
+Task A: Load dataset
+--------------------
+(a) Martin L. helped me obtain the data from https://www.cell.com/cell/fulltext/S0092-8674(21)00583-3. With him (online call, I don't have the original data), we transformed it from R-format to muon format.
+
+(b) Loading done with muon. We will be looking mostly at the ADT part of the full data.
+
+
+Task B: Create a function that can take data for one protein marker and define the positivity threshold for it.
+----------------------------------------------------------------------------------------------------------------
+
+(a) I performed Gaussian fitting on the histograms for each cell marker. With the help of scipy and Gaussian functions, I fitted a curve onto the histogram in each of the peaks. This process was quite painful because it was very case-sensitive. After fitting the two Gaussians onto the two peaks of the histogram, I calculated the intersection of the two Gaussians. The point of intersection would be the positivity threshold.
+
+(b) I used the Gaussian fitting on all the markers where it was possible to obtain a correct positivity threshold (I consulted this with Martin Lukacisin).
+
+(c) When it was not possible to use Gaussian fitting, I again consulted Martin L. and defined the positivity threshold manually.
+
+(d) I saved the graph for Gaussian thresholding in positivityThreshold.png.
+
+
+Task C: Count the cells using the positivity thresholds and known markers.
+--------------------------------------------------------------------------
+(Important note: I used markers that were previously used in gatingStrategyAyelet that we use as reference.)
+(a) I looked in the gatingStrategyAyelet for markers that define the cell types we want to study (cells in ImmAgePaper fig. Mean old/young frequencies). I then used them to create markers for these cell types. I created some dictionaries that will help us count the cells of one cell type. I saved the markers as marker.txt.
+
+(b) I used a boolean mask, and with the help of markers, I only selected the lines that had the desired markers. This was the cell subset in which we have all the cells of one studied cell type.
+
+(c) I saved the counts for one donor as cell_counts_p1.txt.
+
+
+Task D: Plot bar plots/swarm plot of the cell type frequencies for each donor.
+-----------------------------------------------------------------------------
+
+(a) I used this data to create a histogram where we show the frequency of each studied cell type for each donor (we have 8 donors P1 - P8). I also created a swarm plot where we can see the differences in frequencies among the donors.
+
+(b) I saved the swarm plot and bar plots: swarm_plot.png, cell_bar_plots.png.
+
+
+Task E: Perform ANOVA on the metadata included in mmc3.xlsx
+------------------------------------------------------------
+
+(a) I created a dataframe that had, for each donor, the frequency of each cell type. I converted the dataframe into long form and mapped the metadata to this dataframe by donor.
+
+(b) I used the dataframe from task (a) to perform ANOVA on the variables {Gender, CMV_positive, treatment}.
+
+(c) I saved the result from task (b) into anova_res.txt.
+
+
+HOW TO RUN
+----------
+The scripts have commented out usage examples within themselves. It is possible to uncomment them and then run the script from the terminal. You can choose whichever method you like and it will run smoothly (but it will take about 7-10 minutes depending on the script). I highly suggest using the notebook I provided. The data is big and in the notebook it stays loaded, so you can rerun the script if something fails. If you choose to run the scripts, you should be able to understand what they do by the method names and class names. I didn't want to show you all the methods as some serve as just helper methods for the scripts, so the commented out example (test = ClassName ...) should be enough.
+
+
+RESOURCES
+---------
+gatingStrategyAyelet.pdf
+ImmAgePaper.pdf
+https://stackoverflow.com/questions/35990467/fit-mixture-of-two-gaussian-normal-distributions-to-a-histogram-from-one-set-of
+https://www.reneshbedre.com/blog/anova.html
+https://www.researchgate.net/figure/Gating-strategy-applied-to-T-cell-analysis-Gating-strategy-used-to-analyze-cytokine_fig4_330525781
+chatgpt.com - As a refactoring tool.
+https://www.cell.com/cell/fulltext/S0092-8674(21)00583-3 - the source of dataset

@@ -1,0 +1,429 @@
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Monocytes 
+With markers: CD14 + CD33 + 
+
+
+
+
+
+
+
+
+
+
+
+
+MARKER NOT FOUND: CD33
+Failed at cell type: Lymphocytes 
+With markers: CD14 - CD33 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now running anova for: Treatment 
+
+Null hypothesis rejected with cell type: CD57 + NK and p value: 0.01098
+Null hypothesis rejected with cell type: CD185 + CD4-1 + CD4-2 + T and p value: 0.02537
+Null hypothesis rejected with cell type: CD27 + CD8 + T and p value: 0.03467
+Null hypothesis rejected with cell type: NK and p value: 0.02709
+Null hypothesis rejected with cell type: T and p value: 0.01297
+Null hypothesis rejected with cell type: Naive CD4-1 + CD4-2 + T and p value: 0.046
+Null hypothesis rejected with cell type: CD161 - CD45RA + CD4-1 + CD4-2 + Treg_cells and p value: 0.0382
+Null hypothesis rejected with cell type: Naive CD8 + T and p value: 0.03135
+Null hypothesis rejected with cell type: Plasmablast and p value: 0.02698
+
+Finished running anova for: Treatment 
+
+Now running anova for: CMV_positive 
+
+Null hypothesis rejected with cell type: CD8 + T and p value: 0.00444
+Null hypothesis rejected with cell type: Plasmablast and p value: 0.01188
+
+Finished running anova for: CMV_positive 
+
+Now running anova for: Gender 
+
+Null hypothesis rejected with cell type: B and p value: 0.00395
+Null hypothesis rejected with cell type: CD8 + T and p value: 0.02921
+Null hypothesis rejected with cell type: Plasmablast and p value: 0.00623
+
+Finished running anova for: Gender 
+
